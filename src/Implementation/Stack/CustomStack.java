@@ -1,7 +1,7 @@
 package Implementation.Stack;
 
 public class CustomStack {
-    private final int[] data;
+    protected int[] data;
     private static final int DEFAULT_SIZE = 10;
     private int pointer = -1;
 
@@ -13,11 +13,11 @@ public class CustomStack {
         data = new int[size];
     }
 
-    private boolean isFull() {
+    protected boolean isFull() {
         return this.pointer == this.data.length - 1;
     }
 
-    private boolean isEmpty() {
+    protected boolean isEmpty() {
         return this.pointer == -1;
     }
 

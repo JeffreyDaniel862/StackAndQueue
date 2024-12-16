@@ -27,12 +27,12 @@ public class CustomStack {
     }
 
     public int pop () throws Exception {
-        if (this.isEmpty()) throw new Exception("Cannot pop from empty stack");
+        if (this.isEmpty()) throw new StackException("Cannot pop from empty stack");
         return this.data[pointer--];
     }
 
     public int peek() throws Exception{
-        if (this.isEmpty()) throw new Exception("Cannot peek from empty stack");
+        if (this.isEmpty()) throw new StackException("Cannot peek from empty stack");
         return this.data[this.pointer];
     }
 }
